@@ -1,0 +1,168 @@
+
+
+
+
+TBD                                                         R. Moskowitz
+Internet-Draft                                                    Huawei
+Intended status: Standards Track                             H. Birkholz
+Expires: March 16, 2017                                   Fraunhofer SIT
+                                                      September 12, 2016
+
+
+                  Secruity Event Refinement Framework
+                           draft-serf-latest
+
+Abstract
+
+   The abstract goes here
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at http://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on March 16, 2017.
+
+Copyright Notice
+
+   Copyright (c) 2016 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents
+   (http://trustee.ietf.org/license-info) in effect on the date of
+   publication of this document.  Please review these documents
+   carefully, as they describe your rights and restrictions with respect
+   to this document.  Code Components extracted from this document must
+   include Simplified BSD License text as described in Section 4.e of
+   the Trust Legal Provisions and are provided without warranty as
+   described in the Simplified BSD License.
+
+
+
+
+
+
+Moskowitz & Birkholz     Expires March 16, 2017                 [Page 1]
+
+Internet-Draft                    SERF                    September 2016
+
+
+Table of Contents
+
+   1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
+     1.1.  Requirements notation . . . . . . . . . . . . . . . . . .   2
+   2.  Section 1 . . . . . . . . . . . . . . . . . . . . . . . . . .   2
+   3.  Section 2 . . . . . . . . . . . . . . . . . . . . . . . . . .   2
+   4.  IANA considerations . . . . . . . . . . . . . . . . . . . . .   2
+   5.  Security Considerations . . . . . . . . . . . . . . . . . . .   3
+   6.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   3
+   7.  Change Log  . . . . . . . . . . . . . . . . . . . . . . . . .   3
+   8.  Normative References  . . . . . . . . . . . . . . . . . . . .   3
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   3
+
+1.  Introduction
+
+   The Introduction goes here
+
+1.1.  Requirements notation
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and
+   "OPTIONAL" in this document are to be interpreted as described in RFC
+   2119, BCP 14 [RFC2119].
+
+2.  Section 1
+
+   The meat goes here.
+
+   The second paragraph is here
+
+   This is:  a defintion
+
+   This
+   is
+   a
+   listing
+
+
+3.  Section 2
+
+   Some more meat here.
+
+4.  IANA considerations
+
+   This document will include requests to IANA:
+
+   o  first item
+
+
+
+
+Moskowitz & Birkholz     Expires March 16, 2017                 [Page 2]
+
+Internet-Draft                    SERF                    September 2016
+
+
+   o  second item
+
+5.  Security Considerations
+
+   There are always some.
+
+6.  Acknowledgements
+
+   Maybe.
+
+7.  Change Log
+
+   No changes yet.
+
+8.  Normative References
+
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
+              Requirement Levels", BCP 14, RFC 2119,
+              DOI 10.17487/RFC2119, March 1997,
+              <http://www.rfc-editor.org/info/rfc2119>.
+
+Authors' Addresses
+
+   Robert Moskowitz
+   Huawei
+   Oak Park, MI  48237
+   USA
+
+   Email: rgm@htt-consult.com
+
+
+   Henk Birkholz
+   Fraunhofer SIT
+   Rheinstrasse 75
+   Darmstadt  64295
+   Germany
+
+   Email: henk.birkholz@sit.fraunhofer.de
+
+
+
+
+
+
+
+
+
+
+
+
+
+Moskowitz & Birkholz     Expires March 16, 2017                 [Page 3]
