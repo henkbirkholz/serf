@@ -14,6 +14,15 @@ pi:
   symrefs: yes
 
 author:
+- ins: H. Birkholz
+  name: Henk Birkholz
+  org: Fraunhofer SIT
+  abbrev: Fraunhofer SIT
+  email: henk.birkholz@sit.fraunhofer.de
+  street: Rheinstrasse 75
+  code: '64295'
+  city: Darmstadt
+  country: Germany
 - ins: R. Moskowitz
   name: Robert Moskowitz
   org: Huawei
@@ -24,15 +33,6 @@ author:
   city: Oak Park
   region: MI
   country: USA
-- ins: H. Birkholz
-  name: Henk Birkholz
-  org: Fraunhofer SIT
-  abbrev: Fraunhofer SIT
-  email: henk.birkholz@sit.fraunhofer.de
-  street: Rheinstrasse 75
-  code: '64295'
-  city: Darmstadt
-  country: Germany
 
 
 normative:
