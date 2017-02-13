@@ -2,10 +2,10 @@
 
 
 
-I2NSF                                                       R. Moskowitz
-Internet-Draft                                                    Huawei
-Intended status: Standards Track                             H. Birkholz
-Expires: August 17, 2017                                  Fraunhofer SIT
+I2NSF                                                        H. Birkholz
+Internet-Draft                                            Fraunhofer SIT
+Intended status: Standards Track                            R. Moskowitz
+Expires: August 17, 2017                                          Huawei
                                                        February 13, 2017
 
 
@@ -53,7 +53,7 @@ Status of This Memo
 
 
 
-Moskowitz & Birkholz     Expires August 17, 2017                [Page 1]
+Birkholz & Moskowitz     Expires August 17, 2017                [Page 1]
 
 Internet-Draft                    SERF                     February 2017
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Moskowitz & Birkholz     Expires August 17, 2017                [Page 2]
+Birkholz & Moskowitz     Expires August 17, 2017                [Page 2]
 
 Internet-Draft                    SERF                     February 2017
 
@@ -165,7 +165,7 @@ Internet-Draft                    SERF                     February 2017
 
 
 
-Moskowitz & Birkholz     Expires August 17, 2017                [Page 3]
+Birkholz & Moskowitz     Expires August 17, 2017                [Page 3]
 
 Internet-Draft                    SERF                     February 2017
 
@@ -221,7 +221,7 @@ Internet-Draft                    SERF                     February 2017
 
 
 
-Moskowitz & Birkholz     Expires August 17, 2017                [Page 4]
+Birkholz & Moskowitz     Expires August 17, 2017                [Page 4]
 
 Internet-Draft                    SERF                     February 2017
 
@@ -277,7 +277,7 @@ Internet-Draft                    SERF                     February 2017
 
 
 
-Moskowitz & Birkholz     Expires August 17, 2017                [Page 5]
+Birkholz & Moskowitz     Expires August 17, 2017                [Page 5]
 
 Internet-Draft                    SERF                     February 2017
 
@@ -333,7 +333,7 @@ Internet-Draft                    SERF                     February 2017
 
 
 
-Moskowitz & Birkholz     Expires August 17, 2017                [Page 6]
+Birkholz & Moskowitz     Expires August 17, 2017                [Page 6]
 
 Internet-Draft                    SERF                     February 2017
 
@@ -389,20 +389,12 @@ Internet-Draft                    SERF                     February 2017
 
 
 
-Moskowitz & Birkholz     Expires August 17, 2017                [Page 7]
+Birkholz & Moskowitz     Expires August 17, 2017                [Page 7]
 
 Internet-Draft                    SERF                     February 2017
 
 
 Authors' Addresses
-
-   Robert Moskowitz
-   Huawei
-   Oak Park, MI  48237
-   USA
-
-   Email: rgm@htt-consult.com
-
 
    Henk Birkholz
    Fraunhofer SIT
@@ -413,6 +405,12 @@ Authors' Addresses
    Email: henk.birkholz@sit.fraunhofer.de
 
 
+   Robert Moskowitz
+   Huawei
+   Oak Park, MI  48237
+   USA
+
+   Email: rgm@htt-consult.com
 
 
 
@@ -445,4 +443,6 @@ Authors' Addresses
 
 
 
-Moskowitz & Birkholz     Expires August 17, 2017                [Page 8]
+
+
+Birkholz & Moskowitz     Expires August 17, 2017                [Page 8]
