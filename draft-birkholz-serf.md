@@ -2,7 +2,7 @@
 title: Secruity Event Refinement Framework
 abbrev: SERF
 docname: draft-birkholz-serf-latest 
-wg: TBD
+wg:  I2NSF
 stand_alone: true
 ipr: trust200902
 area: Security
