@@ -81,7 +81,8 @@ Table of Contents
      1.1.  Requirements notation . . . . . . . . . . . . . . . . . .   4
    2.  General Architechture . . . . . . . . . . . . . . . . . . . .   4
      2.1.  SERF components & functions . . . . . . . . . . . . . . .   4
-     2.2.  Management Plane functions  . . . . . . . . . . . . . . .   4
+       2.1.1.  Machine-Learning & AI procedures  . . . . . . . . . .   4
+     2.2.  Management Plane functions  . . . . . . . . . . . . . . .   5
      2.3.  Control Plane Functions . . . . . . . . . . . . . . . . .   5
      2.4.  Data Plane Functions  . . . . . . . . . . . . . . . . . .   6
    3.  Section 2 . . . . . . . . . . . . . . . . . . . . . . . . . .   7
@@ -90,7 +91,7 @@ Table of Contents
    6.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   7
    7.  Change Log  . . . . . . . . . . . . . . . . . . . . . . . . .   7
    8.  Normative References  . . . . . . . . . . . . . . . . . . . .   7
-   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   7
+   Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   8
 
 1.  Introduction
 
@@ -103,9 +104,8 @@ Table of Contents
    configuration drift, or malfunctions that result in degraded
    availability or integrity of data.  In the domain of autonomous
    services, security automation supports the decision making in the
-   domains of spacial cognition, advanced planning, adaptive behaviour
-   or game theory based decision making.  Creating relevant (security)
-   events of high refinement from an staggering amount of raw events of
+   domains of spacial cognition, advanced planning, adaptive behavior or
+   game theory based decision making.  Creating relevant (security)
 
 
 
@@ -114,6 +114,7 @@ Moskowitz & Birkholz     Expires August 17, 2017                [Page 2]
 Internet-Draft                    SERF                     February 2017
 
 
+   events of high refinement from an staggering amount of raw events of
    low refinement is the objective of the solution proposed in this
    document.  This document defines and illustrates five core elements
    that are required to facilitate a refinement process that conducts
@@ -133,7 +134,7 @@ Internet-Draft                    SERF                     February 2017
       procedures
 
    o  a concise data model for security events that can be interpreted
-      and processed by SERF components to fuel correpsonding machine-
+      and processed by SERF components to fuel corresponding machine-
       learning functions and AI procedures
 
    o  two alternative architecture designs based on CoAP pub/sub
@@ -150,7 +151,7 @@ Internet-Draft                    SERF                     February 2017
    spawned and discarded to support dynamic changes in regard to
    processing capability and scalability.  The dynamic orchestration of
    the virtual functions that compose a SERF domain address the
-   resilience and scalability required to mitigate or remidiate
+   resilience and scalability required to mitigate or remediate
    malicious acts, such as DDoS attacks in production systems, targeted
    attacks at the SERF domain itself, or massive system failures.  SERF
    components are able to attest their integrity using traditional
@@ -159,7 +160,6 @@ Internet-Draft                    SERF                     February 2017
    as proprietary anomaly detection components, netflow statistics,
    automobile ECU, actuators and sensors in ICS, or constrained-node
    networks in the thing-2-thing scope.
-
 
 
 
@@ -186,7 +186,7 @@ Internet-Draft                    SERF                     February 2017
 
    SERF components are bundles of virtual functions that can be chained,
    composed in a service graph, migrated or orchestrated, and therefore
-   dynamically instanciated, modified or discarded.
+   dynamically instantiated, modified or discarded.
 
    SERF components contain SERF functions.  A SERF function typically is
    a specifc software (agent) that processes events or collects and
@@ -194,30 +194,30 @@ Internet-Draft                    SERF                     February 2017
    ad-hoc basis.  The interconnected work-flows (service chains) SERF
    components compose constitute a SERF domain.  SERF components can be
    geographically grouped, spawned into distributed cloud infrastructure
-   or use the excess procssing capabilities of existing infrastructure
+   or use the excess processing capabilities of existing infrastructure
    as part of a fog-computing domain.  SERF components that emit raw
    events to a SERF domain typically reside on endpoints, such as
    notebooks, vehicle ECU, IoT devices, or ICS actuators.  The majority
-   of SERF functions suppoort the aggregation, correlation, analysis,
+   of SERF functions support the aggregation, correlation, analysis,
    assertion and assessment of events.  Each SERF component supports the
    goal of event refinement in one way or another.  The output of a SERF
    domain are events - although it could be argued that the
-   corresponding events can be of such high refineement that they are
+   corresponding events can be of such high refinement that they are
    analogous to statements (as produced by a SACM domain) or even
    reports (as produces by a MILE domain).
 
    Larger picture orchestration, such as load balancing, utilization
-   based instanciation and requirement-based migration of functions
-   (which requires the resolution of discrpency between contraticting
+   based instantiation and requirement-based migration of functions
+   (which requires the resolution of discrepancy between contradicting
    requirements via appropriate machine-learning and AI functions) is
-   conducted by a specialiced mesh of SERF orchestrator components.
+   conducted by a specialized mesh of SERF orchestrator components.
 
-2.2.  Management Plane functions
+2.1.1.  Machine-Learning & AI procedures
 
-   Imperative and declarative guidance is transported via the managment
-   plane.  Short term loss of availability of the management plane does
-   not impact the functionality of a SERF domain.  Components retain
-   their (potentially dynamic) configuration that is the basis for
+   The heart of very SERF component are the modular machine-learning and
+   AI procedures that contributes to the event refinement framework.
+   Even the simplest aggregation procedure can benefit from learning a
+   standard pattern and alerting deviations from that pattern.  Most
 
 
 
@@ -226,15 +226,30 @@ Moskowitz & Birkholz     Expires August 17, 2017                [Page 4]
 Internet-Draft                    SERF                     February 2017
 
 
+   desirable for SERF component modules are un-supervised machine-
+   learning procedures, but semi-supervised or even supervised learning
+   has to be applied if unsupervised-learning results in a too high
+   amount of false positives.  A chaining of unsupervised machine-
+   learning function and basic pattern recognition procedures, such as
+   text-distance analysis, markov-models, or dynamic time warping can
+   support the semi-supervised learning methods and in the end result in
+   a SERF domain that does not require supervision, in the end.
+
+2.2.  Management Plane functions
+
+   Imperative and declarative guidance is transported via the management
+   plane.  Short term loss of availability of the management plane does
+   not impact the functionality of a SERF domain.  Components retain
+   their (potentially dynamic) configuration that is the basis for
    orchestration capabilities on the control plane and the corresponding
-   refinement workflow on the data plane.
+   refinement work-flow on the data plane.
 
    Examples include:
 
-   o  Configuraiton of the functions incorporated in a SERF component
+   o  Configuration of the functions incorporated in a SERF component
 
-   o  Monitoring of ressource load, availbality, and other indicators
-      critial to a congestion-less event refinement work-flow
+   o  Monitoring of resource load, availability, and other indicators
+      critical to a congestion-less event refinement work-flow
 
    o  Detection of configuration drift via declarative guidance and
       remediation of corresponding configuration that is in conflict
@@ -242,38 +257,23 @@ Internet-Draft                    SERF                     February 2017
 
 2.3.  Control Plane Functions
 
-   A workflow of event refinement is orchestrated via control plane
-   functions.  A significant portion of contol plane functions is
-   faciliated by each SERF component itself.  Examples include:
+   A work-flow of event refinement is orchestrated via control plane
+   functions.  A significant portion of control plane functions is
+   facilitated by each SERF component itself.  Examples include:
 
-   o  propagation of individual capabilities (bsaed on incorporated
-      fucntions) and corresponding implerative guidance regarding input
+   o  propagation of individual capabilities (based on incorporated
+      functions) and corresponding imperative guidance regarding input
       and output of interfaces provided by a SERF components via
       registration and discovery function
 
    o  registration, subscription and publication functions, also peer-
-      2-peer negotiation of communication channels with specfic
+      2-peer negotiation of communication channels with specific
       interaction and data model (e.g.  IPFIX, NETMOD)
 
-   o  monitoring of SERF component specfific event volume, trending
-      analysis and dynamical adaption of function ressources of the SERF
+   o  monitoring of SERF component specific event volume, trending
+      analysis and dynamical adaption of function resources of the SERF
       components itself and publication of corresponding control events
       and features to support the orchestration of the entire SERF
-      domain via a redundant mash of SERFO (SERF orchestration
-      components).
-
-   o  requesting and updating incorporated function modules that extend
-      or change the interfaces of a SERF component via changing,
-      adapting or updating corresponding refinement functions (e.g.
-      machine-learning functions or AI procedures).  Effectivly, the
-      need to modify a function set of a SERF component is detected and
-      orchestrated on the control plane.  The acutal update is conducted
-      via the manangement plane in the context of imperative guidance
-      (which new function has to be installed in which way) and
-      declarative guidance (which function should be replaced by which
-      function).
-
-
 
 
 
@@ -281,6 +281,20 @@ Moskowitz & Birkholz     Expires August 17, 2017                [Page 5]
 
 Internet-Draft                    SERF                     February 2017
 
+
+      domain via a redundant mash of SERFO (SERF orchestration
+      components).
+
+   o  requesting and updating incorporated function modules that extend
+      or change the interfaces of a SERF component via changing,
+      adapting or updating corresponding refinement functions (e.g.
+      machine-learning functions or AI procedures).  Effectively, the
+      need to modify a function set of a SERF component is detected and
+      orchestrated on the control plane.  The actual update is conducted
+      via the management plane in the context of imperative guidance
+      (which new function has to be installed in which way) and
+      declarative guidance (which function should be replaced by which
+      function).
 
 2.4.  Data Plane Functions
 
@@ -290,46 +304,32 @@ Internet-Draft                    SERF                     February 2017
    linear sequence of single function, in fact a directed graph that
    might even include refinement loops with termination conditions can
    be composed in a SERF domain.  Hence, a service graph with rather
-   complex event processment streams can be the result of data plane
+   complex event impressment streams can be the result of data plane
    event flow.  The standard payload of the data plane are (security)
    events.  The structure of data plane function typically adheres to a
-   hierarical (tree- or taxonomy-like) composition.  This is only the
-   typical default in general setups.  U None-cricle-free graphs with
+   hierarchical (tree- or taxonomy-like) composition.  This is only the
+   typical default in general setups.  In none-cricle-free graphs with
    multiple condition based branching and various work-flow layers can
    be the result of a rather sophisticated event refinement requirements
-   a data plane workflow is based upon.
+   a data plane work-flow is based upon.
 
    Typical data plane function include:
 
-   o  machine-learning algortihms, such as (hidden) markov-models,
+   o  machine-learning algorithms, such as (hidden) markov-models,
       neural-networks, time-line-analysis, CEP sliding window analysis,
       text-distance-analysis and others.
 
-   o  interface that define the requried data model for data in motion,
+   o  interface that define the required data model for data in motion,
       optionally semantic properties (e.g. in the form of tags,
       annotations or even ontological structured data), interface that
       define the output data model for data in motion
 
    o  specific data plane operation that can generate data, access and
-      modifify SERF components that provide existing (potentially
+      modify SERF components that provide existing (potentially
       historical, e.g. a event log, or complementary, e.g. a
       vulnerability data base) data, request data from SERF components
       or standard pools of data (e.g. an LDAP directory).
 
-   o  event format constructor, parser and validators
-
-   o  resolving discrepancies between contradicting informations of
-      events of any refinement level.
-
-   Larger picture orchestration, such as load balancing, utilization
-   based instanciation and requirement-based migration of functions
-   (which requires the resolution of discrpency between contraticting
-   requirements via appropriate machine-learning and AI functions).
-   (typically called "downstream", although feedback loops can create
-   events that are inserted again of an event processment level of lower
-   refinement or result in specifically tailored monitoringtask or the
-   instanciation of more specific SERF components to faciliate a more
-   unique (situation-dependend/aware) refinement workflow.
 
 
 
@@ -337,6 +337,21 @@ Moskowitz & Birkholz     Expires August 17, 2017                [Page 6]
 
 Internet-Draft                    SERF                     February 2017
 
+
+   o  event format constructor, parser and validators
+
+   o  resolving discrepancies between contradicting informations of
+      events of any refinement level.
+
+   Larger picture orchestration, such as load balancing, utilization
+   based instantiation and requirement-based migration of functions
+   (which requires the resolution of discrepancy between contradicting
+   requirements via appropriate machine-learning and AI functions).
+   (typically called "downstream", although feedback loops can create
+   events that are inserted again of an event processesment level of
+   lower refinement or result in specifically tailored monitoring task
+   or the instantiation of more specific SERF components to facilitate a
+   more unique (situation-depended/aware) refinement work-flow.
 
 3.  Section 2
 
@@ -369,6 +384,16 @@ Internet-Draft                    SERF                     February 2017
               DOI 10.17487/RFC2119, March 1997,
               <http://www.rfc-editor.org/info/rfc2119>.
 
+
+
+
+
+
+Moskowitz & Birkholz     Expires August 17, 2017                [Page 7]
+
+Internet-Draft                    SERF                     February 2017
+
+
 Authors' Addresses
 
    Robert Moskowitz
@@ -389,4 +414,35 @@ Authors' Addresses
 
 
 
-Moskowitz & Birkholz     Expires August 17, 2017                [Page 7]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Moskowitz & Birkholz     Expires August 17, 2017                [Page 8]
