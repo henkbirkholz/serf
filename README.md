@@ -1,6 +1,6 @@
 # Security Event Refinement Framework
 
-This is the working area for the Individual internet-draft, "Secruity Event Refinement Framework".
+This is the working area for the Individual internet-draft, "Security Event Refinement Framework".
 
 * [Editor's copy](https://henkbirkholz.github.io/serf/)
 * [Individual Draft] (https://tools.ietf.org/html/draft-birkholz-serf)
