@@ -1,4 +1,4 @@
-# Secruity Event Refinement Framework
+# Security Event Refinement Framework
 
 This is the working area for the Individual internet-draft, "Secruity Event Refinement Framework".
 
