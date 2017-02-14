@@ -1,5 +1,5 @@
 ---
-title: Secruity Event Refinement Framework
+title: Security Event Refinement Framework
 abbrev: SERF
 docname: draft-birkholz-serf-latest 
 wg:  I2NSF
