@@ -5,8 +5,8 @@
 I2NSF                                                        H. Birkholz
 Internet-Draft                                            Fraunhofer SIT
 Intended status: Standards Track                            R. Moskowitz
-Expires: August 20, 2017                                          Huawei
-                                                       February 16, 2017
+Expires: September 4, 2017                                        Huawei
+                                                          March 03, 2017
 
 
                   Security Event Refinement Framework
@@ -26,14 +26,16 @@ Abstract
    chains or downstream work-flows, available low-level events have to
    be brought into a larger semantic context by refining them into a
    lower volume of security events with a higher grade of expressiveness
-   or significance.  This work describes an architecture, its
-   corresponding components, interfaces and interaction model, as well
-   as a security event information model to facilitate a refinement
-   framework to process event streams via aggregation, correlation and
-   machine-learning methods.  The components defined are virtual
-   encapsulations of corresponding machine-learning and AI function that
-   require certain features derived from the event data that is made
-   available by low-level event streams.
+   or significance.
+
+   This work describes an architecture, its corresponding components,
+   interfaces and interaction model, as well as a security event
+   information model to facilitate a refinement framework to process
+   event streams via aggregation, correlation and machine-learning
+   methods.  The components defined are virtual encapsulations of
+   corresponding machine-learning and AI function that require certain
+   features derived from the event data that is made available by low-
+   level event streams.
 
 Status of This Memo
 
@@ -47,18 +49,19 @@ Status of This Memo
 
    Internet-Drafts are draft documents valid for a maximum of six months
    and may be updated, replaced, or obsoleted by other documents at any
+
+
+
+
+Birkholz & Moskowitz    Expires September 4, 2017               [Page 1]
+
+Internet-Draft                    SERF                        March 2017
+
+
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-
-
-
-Birkholz & Moskowitz     Expires August 20, 2017                [Page 1]
-
-Internet-Draft                    SERF                     February 2017
-
-
-   This Internet-Draft will expire on August 20, 2017.
+   This Internet-Draft will expire on September 4, 2017.
 
 Copyright Notice
 
@@ -81,7 +84,7 @@ Table of Contents
      1.1.  Requirements notation . . . . . . . . . . . . . . . . . .   4
    2.  General Architechture . . . . . . . . . . . . . . . . . . . .   4
      2.1.  SERF components & functions . . . . . . . . . . . . . . .   4
-       2.1.1.  Machine-Learning & AI procedures  . . . . . . . . . .   4
+       2.1.1.  Machine-Learning & AI procedures  . . . . . . . . . .   5
      2.2.  Management Plane functions  . . . . . . . . . . . . . . .   5
      2.3.  Control Plane Functions . . . . . . . . . . . . . . . . .   5
      2.4.  Data Plane Functions  . . . . . . . . . . . . . . . . . .   6
@@ -89,8 +92,8 @@ Table of Contents
    4.  IANA considerations . . . . . . . . . . . . . . . . . . . . .   7
    5.  Security Considerations . . . . . . . . . . . . . . . . . . .   7
    6.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   7
-   7.  Change Log  . . . . . . . . . . . . . . . . . . . . . . . . .   7
-   8.  Normative References  . . . . . . . . . . . . . . . . . . . .   7
+   7.  Change Log  . . . . . . . . . . . . . . . . . . . . . . . . .   8
+   8.  Normative References  . . . . . . . . . . . . . . . . . . . .   8
    Authors' Addresses  . . . . . . . . . . . . . . . . . . . . . . .   8
 
 1.  Introduction
@@ -102,25 +105,26 @@ Table of Contents
    integrity of network separation (network slicing) or content of PDU
    flows and the assessment of the impact of identified vulnerabilities,
    configuration drift, or malfunctions that result in degraded
-   availability or integrity of data.  In the domain of autonomous
-   services, security automation supports the decision making in the
-   domains of spacial cognition, advanced planning, adaptive behavior or
-   game theory based decision making.  Creating relevant (security)
+   availability or integrity of data.
 
 
 
-Birkholz & Moskowitz     Expires August 20, 2017                [Page 2]
+Birkholz & Moskowitz    Expires September 4, 2017               [Page 2]
 
-Internet-Draft                    SERF                     February 2017
+Internet-Draft                    SERF                        March 2017
 
 
-   events of high refinement from an staggering amount of raw events of
-   low refinement is the objective of the solution proposed in this
-   document.  This document defines and illustrates five core elements
-   that are required to facilitate a refinement process that conducts
-   aggregation, correlation and analysis of event streams with machine
-   learning and AI procedures in a distributed mash of virtual (and
-   sometimes also hardware-bound) functions:
+   In the domain of autonomous services, security automation supports
+   the decision making in the domains of spacial cognition, advanced
+   planning, adaptive behavior or game theory based decision making.
+   Creating relevant (security) events of high refinement from an
+   staggering amount of raw events of low refinement is the objective of
+   the solution proposed in this document.  This document defines and
+   illustrates five core elements that are required to facilitate a
+   refinement process that conducts aggregation, correlation and
+   analysis of event streams with machine learning and AI procedures in
+   a distributed mash of virtual (and sometimes also hardware-bound)
+   functions:
 
    o  an information sharing architecture that is feasible to be applied
       in the thing-2-thing scope, including a pub/sub approach virtual
@@ -158,17 +162,16 @@ Internet-Draft                    SERF                     February 2017
    remote attestation and emerging attestation procedures (such as
    TUDA).  Heterogeneous sources of events are addressed by SERF, such
    as proprietary anomaly detection components, netflow statistics,
+
+
+
+Birkholz & Moskowitz    Expires September 4, 2017               [Page 3]
+
+Internet-Draft                    SERF                        March 2017
+
+
    automobile ECU, actuators and sensors in ICS, or constrained-node
    networks in the thing-2-thing scope.
-
-
-
-
-
-Birkholz & Moskowitz     Expires August 20, 2017                [Page 3]
-
-Internet-Draft                    SERF                     February 2017
-
 
 1.1.  Requirements notation
 
@@ -212,20 +215,23 @@ Internet-Draft                    SERF                     February 2017
    requirements via appropriate machine-learning and AI functions) is
    conducted by a specialized mesh of SERF orchestrator components.
 
+
+
+
+
+
+
+Birkholz & Moskowitz    Expires September 4, 2017               [Page 4]
+
+Internet-Draft                    SERF                        March 2017
+
+
 2.1.1.  Machine-Learning & AI procedures
 
    The heart of very SERF component are the modular machine-learning and
    AI procedures that contributes to the event refinement framework.
    Even the simplest aggregation procedure can benefit from learning a
    standard pattern and alerting deviations from that pattern.  Most
-
-
-
-Birkholz & Moskowitz     Expires August 20, 2017                [Page 4]
-
-Internet-Draft                    SERF                     February 2017
-
-
    desirable for SERF component modules are un-supervised machine-
    learning procedures, but semi-supervised or even supervised learning
    has to be applied if unsupervised-learning results in a too high
@@ -266,6 +272,16 @@ Internet-Draft                    SERF                     February 2017
       and output of interfaces provided by a SERF components via
       registration and discovery function
 
+
+
+
+
+
+Birkholz & Moskowitz    Expires September 4, 2017               [Page 5]
+
+Internet-Draft                    SERF                        March 2017
+
+
    o  registration, subscription and publication functions, also peer-
       2-peer negotiation of communication channels with specific
       interaction and data model (e.g.  IPFIX, NETMOD)
@@ -274,14 +290,6 @@ Internet-Draft                    SERF                     February 2017
       analysis and dynamical adaption of function resources of the SERF
       components itself and publication of corresponding control events
       and features to support the orchestration of the entire SERF
-
-
-
-Birkholz & Moskowitz     Expires August 20, 2017                [Page 5]
-
-Internet-Draft                    SERF                     February 2017
-
-
       domain via a redundant mash of SERFO (SERF orchestration
       components).
 
@@ -321,6 +329,15 @@ Internet-Draft                    SERF                     February 2017
 
    o  interface that define the required data model for data in motion,
       optionally semantic properties (e.g. in the form of tags,
+
+
+
+
+Birkholz & Moskowitz    Expires September 4, 2017               [Page 6]
+
+Internet-Draft                    SERF                        March 2017
+
+
       annotations or even ontological structured data), interface that
       define the output data model for data in motion
 
@@ -328,15 +345,7 @@ Internet-Draft                    SERF                     February 2017
       modify SERF components that provide existing (potentially
       historical, e.g. a event log, or complementary, e.g. a
       vulnerability data base) data, request data from SERF components
-      or standard pools of data (e.g. an LDAP directory).
-
-
-
-
-Birkholz & Moskowitz     Expires August 20, 2017                [Page 6]
-
-Internet-Draft                    SERF                     February 2017
-
+      or standard pools of data (e.g.  an LDAP directory).
 
    o  event format constructor, parser and validators
 
@@ -373,6 +382,18 @@ Internet-Draft                    SERF                     February 2017
 
    Maybe.
 
+
+
+
+
+
+
+
+Birkholz & Moskowitz    Expires September 4, 2017               [Page 7]
+
+Internet-Draft                    SERF                        March 2017
+
+
 7.  Change Log
 
    No changes yet.
@@ -383,16 +404,6 @@ Internet-Draft                    SERF                     February 2017
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997,
               <http://www.rfc-editor.org/info/rfc2119>.
-
-
-
-
-
-
-Birkholz & Moskowitz     Expires August 20, 2017                [Page 7]
-
-Internet-Draft                    SERF                     February 2017
-
 
 Authors' Addresses
 
@@ -434,15 +445,4 @@ Authors' Addresses
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-Birkholz & Moskowitz     Expires August 20, 2017                [Page 8]
+Birkholz & Moskowitz    Expires September 4, 2017               [Page 8]
